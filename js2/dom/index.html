@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <!-- <style>
+        form > input:nth-child(2){
+             border: 2px solid red;
+        }
+    </style> -->
+    <style>
+        .one{
+            background-color:  yellow;
+            color: blue;
+            border: 2px solid darkgreen;
+        }
+        .two{
+            background-color:  darkgreen;
+            color: azure;
+            border: 2px solid yellowgreen;
+            
+        }
+    </style>
+</head>
+<body>
+     <!-- <div class="container" id ="root">
+         
+        <b id="bold" style="color: red; font-size:20px;">Bold Text</b>
+     </div> -->
+
+     <!-- 
+        * the above data HTML need to under standing  by the CPU
+        * JS mange HTML & CSS BCZ browser only stand the jS
+    
+         DOM
+
+         DOM => Document object model.
+
+         * 1. representaion of document in the from of js is called Dom.
+         * 2.  All HTML and CSS together is represnted as big JS object (i.e actually tree data structure ) the object is called DOM/DOM tree.
+         * 3. HTML is parsed into JS object.   
+         * 4. Every HTML element (node) is an object located  in the Heap Memory.
+         * 5. to edit/manipulated an HTML element dynamiclly (using JS) you need to the Heap memory refrence of the element .
+         6. document object is the one which knows all the references or the parsed HTML object.
+        * 7. some functionalies inside this document object can serve the references of HTML to us .
+        * 8. one such functionality is `getElementById()` method which takes the id of desired html element and searches for that element in the DOM tree(parsed HTML Object) and returns that reference(Heap Memory address).
+  
+
+
+        root = {
+            className:"container",
+            id:"root",
+            children:[
+                {
+                    tagName:"p",
+                    className:"para",
+                    children:[
+                    {
+                        tagName:"span",
+                        innerText:"span 1",
+                        children:[],
+                    },
+                    {
+                        tagName:"span",
+                        innerText:"span 2",
+                        children:[],
+                    }
+                    
+                    ]
+                },
+                {
+                    tagName:"b",
+                    id:"bold",
+                    style:{
+                        color:"red",
+                        fontSize:"20px"
+                    },
+                    innerText:"bold"
+                }
+            ],
+            tagName:"div"
+
+        }
+    * -->
+
+    <!-- secound class -->
+    <!-- draw the tree structure  --> 
+    <div class="parent">
+        parent text 
+        <div class="child">
+            chiled text
+        </div>
+        <span>Span text </span>
+    </div>
+    <input type="text" value="Abu Salman" placeholder="Name" required name="instructor name"><br><br>
+    <button onclick="toggelinnerText()">Click me </button>
+    <p id="para"class="one">Abu Salman: I love you Hafsa</p>
+
+    <!-- in this HTML code 1 parent id,2 element with child class and 1 element is para ID -->
+
+    <!-- enambele and disable  button  -->
+
+    <input type="text"><br><br>
+    
+
+    <button onclick="exicute()">Disable</button>
+    <br><br>
+    <form action="">
+        <input type="text" placeholder="Name">
+        <input type="number" placeholder="Age">
+    </form>
+   
+    <script src="_01dom.js"></script>
+</body>
+</html>

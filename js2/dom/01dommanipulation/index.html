@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- creat login form where user name shold of 3-10 charactor
+    
+    Password should be of 8-16 char with atleast one special one Uper case and one lower case-->
+
+    <!-- <input type="text" value ="ABU SALMAN"name="" id="username" placeholder="User Name">
+    <br><br>
+
+    <img src=" https://picsum.photos/200/300.jpg" alt="IMGES">
+    <button onclick="changeTheType()">change the type </button> <br>
+    <input type="checkbox" checked> -->
+
+
+    <!-- loder -->
+    <!-- <button onclick="addLoader()" class="Load">
+        <span>Loader Inside The Button</span>
+        <div class="loader" id="loderid"></div>
+    </button> -->
+
+
+    
+    <!-- add a element by using js  -->
+    <!-- <button id="btn" onclick="addLoader()" class="Load">
+        <span>Loader Inside The Button</span>
+        (<div class="loader" id="loderid"></div> remove the elemnet from the js )
+       
+    </button> -->
+
+    <!-- add a element in between the element like [1,2,3,4]  and we added 8 in b/w 3 & 4  [1,2,3,8,4] -->
+
+
+  <!-- <button id="btn" onclick="addElementInBtween()" class="Load">
+        <span>1 one</span>
+        <b>2 two</b>
+        <label >3 three</label>
+     </button> -->
+
+     
+     <!-- in below we want to creat using js  -->
+     <!-- <button onclick="addelement()">Creat div container with all element </button> -->
+      
+     
+     <!--event now start    -->
+     <!-- two type of event 
+             * mouse event 
+                1.scroll
+                2.click
+                3.moving mouse onto an element(mouseenter)
+                4.moving mouse out from an element (mouseleave)
+                5. right click
+                6. drag
+
+             * keyboard event
+                1.press down  a key (mean key ko press kr k down rakhna)
+                2. press releasing (keyup) 
+             
+             * other event
+              
+                1.changing the text of element (input value change)
+                2.submitting a form (submit)
+
+    -->
+ <!-- every event start from "on" -->
+    <div class="btn" 
+    onclick="clickListener()"
+    onmouseenter="mouseEnterListener()"
+    onmouseleave="mouseleavelistener()"
+    ondblclick="doubleClickListener()">Click Me</div>
+    <script src="dommanipulation.js"></script>
+    <script src="event.js"></script>
+</body>
+</html>

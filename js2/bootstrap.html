@@ -1,0 +1,125 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!-- below link is use for bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+ </head>
+ <body>
+
+    <!-- 
+        ***BreakPoints***
+
+        S.no     breakpoint      class infix      dimensiion 
+        01       x-small            -              0px -575px           [col-*]
+        02       Small              sm             576px-767px          [col-sm*]
+        03       medium             md             768px-991px          [col-md*]
+        04       Large              lg             992px-1199px         [col-lg*]
+        05       extra large        xl             1200px-1399px        [col-xl*]
+        06       extra extra large  xxl             >=1400px            [col-xxl*] 
+     -->
+
+        <!-- 
+
+                    Extra small      Small           Medium          Large               X-Large            XX-Large 
+                     <576px          ≥576px         ≥768px          ≥992px               ≥1200px            ≥1400px
+     -----------------------------------------------------------------------------------------------------------------------------                
+.container	        100%	        540px	        720px	        960px	            1140px	            1320px
+.container-sm	    100%	        540px	        720px	        960px	            1140px	            1320px
+.container-md	    100%	        100%	        720px	        960px	            1140px	            1320px
+.container-lg	    100%	        100%	        100%	        960px	            1140px	            1320px
+.container-xl	    100%	        100%	        100%	        100%	            1140px	            1320px
+.container-xxl	    100%	        100%	        100%	        100%	            100%	            1320px
+.container-fluid	100%	        100%	        100%	        100%	            100%	             100%
+         -->
+   
+   
+   
+         <!-- 
+        Row
+           1. row ko container class  k ander bnate  hai
+           2. 1 Row 12 colum mai devide hota hai 
+           3. Row is a dive which contain column
+           4. div with column class must be in row parent .col div cannot be inside a col div
+           5. when ever you define a div wit row class it dividethat div in 12 column
+           6. if we take class col only it take auto width
+           7. if we take col-auto it mean take width of text in div
+           8. when we tale class row-col-2 mean 1 row main 2 hi column honge   ,row-col-3 row-col-4,row-col-5 etc
+           9. row-col-auto=> mean jitna content hoga utna hi with lega or column mai devide kr dega       
+
+
+           <div class="container">
+               <div class="row">
+            <div class="col-12">1</div>
+        </div>
+
+             2 coloum
+        <div class="row">
+            <div class="col-8">8</div>
+            <div class="col-4">4</div>
+        </div>
+
+      2 equal  coloum
+
+        <div class="row">
+            <div class="col-6">6</div>
+            <div class="col-6">6</div>
+        </div>
+          3 equal  coloum
+
+         <div class="row">
+            <div class="col-4">4</div>
+            <div class="col-4">4</div>
+            <div class="col-4">4</div>
+        </div>
+
+          4 equal  coloum 
+           <div class="row">
+            <div class="col-3">3</div>
+            <div class="col-3">3</div>
+            <div class="col-3">3</div>
+            <div class="col-3">3</div>
+        </div>
+     6 equal  coloum 
+
+        <div class="row">
+            <div class="col-2">2</div>
+            <div class="col-2">2</div>
+            <div class="col-2">2</div>
+            <div class="col-2">2</div>
+            <div class="col-2">2</div>
+            <div class="col-2">2</div>
+        </div>
+
+          12 equal  coloum 
+
+         <div class="row">
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+            <div class="col-1">1</div>
+        </div>
+    </div>
+
+        -->
+
+
+
+        
+  
+    <button type="button" class="btn btn-primary">Primary</button>
+    <!-- below link is use for bootstrap CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+ </body>
+ </html>
